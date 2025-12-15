@@ -1,0 +1,108 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+header a{
+    color: white;
+    padding: 4px 8px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.home{
+    background-color: rgb(213, 59, 85);
+    border-radius: 5px;
+}
+header a:hover{
+    background-color: rgb(213, 59, 85);
+    border-radius: 5px;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+section img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+#purple-light,#moon{
+    mix-blend-mode: screen;
+}
+section p{
+    position: absolute;
+    top: 50%;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+    text-shadow: 7px 7px 7px black;
+    transform:translateY(-50%) ;
+}
+section p span{
+    font-weight: 300;
+    font-size: 50px
+}
+main{
+    padding: 100px 20px;
+    position: relative;
+    background-color: black;
+    height: auto;
+    overflow-y: auto;
+}
+.call{
+    position: absolute;
+    padding: 10px 8px;
+    background-color: rgb(19, 29, 216);
+    color: rgb(212, 22, 139);
+    border-radius: 20px;
+    top: 90%;
+    left: 90%;
+    font-size: 22px;
+    position: fixed;
+    z-index: 1000;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    transition: all 0.2s ease-in;
+}
+.call:hover{
+    background-color: rgb(43, 43, 175);
+}
+main div {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.4;
+}
+main h2{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 6.5px;
+}
+::-webkit-scrollbar-track{
+    background-color: blue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: darkblue;
+}
